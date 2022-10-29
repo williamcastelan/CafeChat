@@ -22,10 +22,9 @@ The following instructions assume that you have Python and Ren'Py already instal
 ```
 $ git clone git@github.com:apzhang7/CafeChat.git
 ```
+2. Open up latest Ren'Py folder and move CafeChat into the file location.
 
-2. Open up Ren'Py and move CafeChat into the file location.
-
-3. Refresh and click CafeChat.
+3. Open the renpy application, then refresh and click CafeChat.
 
 5. Launch the project.
 
