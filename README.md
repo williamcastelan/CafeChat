@@ -18,7 +18,7 @@ Cafe Chat is a game made by Angela Z., William C., Lorie L., and Rosa G. for our
 The following instructions assume that you have Python and Ren'Py already installed.
   If you do not have Ren'Py, go to this link and download it: https://www.renpy.org/
 
-1. Clone this repository.
+1. Clone this repository by copy and pasting what is after the ```$``` as it denotes the terminal.
 ```
 $ git clone https://github.com/apzhang7/CafeChat.git
 ```
