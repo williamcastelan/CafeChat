@@ -20,7 +20,7 @@ The following instructions assume that you have Python and Ren'Py already instal
 
 1. Clone this repository.
 ```
-$ git clone git@github.com:apzhang7/CafeChat.git
+$ git clone https://github.com/apzhang7/CafeChat.git
 ```
 2. Open up latest Ren'Py folder and move CafeChat into the file location.
 
