@@ -28,11 +28,12 @@ init:
     image pootie normal = Image("pootie normal.png")
     image pootie confused = Image("pootie confused.png")
     image pootie idea = Image("pootie idea.png")
+    image pootie cafe = Image("pootie cafe.png")
+    image sad dog = Image("sad dog.png")
    
     $ tip = int(0)
     $ badChoices = 0
-    $ goodPootEnd = 0
-    $ badPootEnd2 = 0
+    $ goodPootEnd = False
     $ stepsCorrect = 7
  
     default coriEnding = False
@@ -485,7 +486,9 @@ label start:
         jump neutralPootEnd
    
     label badPootEnd:
+        show sad dog
         "You were arrested as an accomplice for murder after a bystander dog was buried under a pile of piranhas after Pootie's getaway :("
+        "R.I.P"
         return
    
     label neutralPootEnd:
@@ -508,19 +511,21 @@ label start:
         menu:
             "I'll admit, it would be nice to have someone helping around.":
                 i "I'll admit, it would be nice to have someone helping around."
-                $ goodPootEnd = goodPootEnd + 1
+                $ goodPootEnd = True
             "Nope, hard pass with your help.":
                 i "Nope, hard pass with your help."
                 $ badPootEnd2 = badPootEnd + 1
 
-        if goodPootEnd == 1:
-            jump goodPootEnding
-        elif badPootEnd:
-            jump badPootEnding2
-
-    label goodPootEnding:
-        "One week later"
-    label badPootEnding2:
-        "Pootie is arrested for murder after a bystander dog was buried by piranhas during her robbery getaway"
+        if goodPootEnd == True:
+            "One week later"
+            show pootie cafe
+            "Pootie turned a new leaf and is now a new employee at the Cafe"
+            ":)"
+        else:
+            show sad dog
+            "Pootie is arrested for murder after a bystander dog was buried by piranhas during her robbery getaway"
+            "R.I.P :("
+            
+        
  
     return
